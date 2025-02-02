@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Crochet Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FAF3E0; /* Cream color */
+            color: #5A4631; /* Brownish color */
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            background-color: #4CAF50; /* Green color */
+            padding: 20px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .category-section {
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .category-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .product-section {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 products per row */
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .product-item {
+            text-align: center;
+            background-color: #EDE0D4;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-item img {
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+            max-width: 200px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .product-item p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .rating {
+            color: #FFD700; /* Gold for star ratings */
+        }
+
+        .reviews {
+            margin-top: 20px;
+        }
+
+        .reviews p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #A67B5B;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .price {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #4CAF50; /* Green color for prices */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> <img src="logo.png" alt="Shelly's Crochet Store Logo" style="height: 80px; margin-right: 20px;"></h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Category: Cardigans -->
+        <section id="cardigans" class="category-section">
+            <h2>Cardigans</h2>
+                <section class="product-section">
+                    <!-- Cardigan 1 -->
+                    <div class="product-item">
+                        <a href="order.html?product=Soft%20Crochet%20Cardigan%201&price=1800&description=Soft%20Crochet%20Cardigan%201">
+                            <img src="cardigan1.jpg" alt="Soft Crochet Cardigan 1">
+                        </a>
+                        <p>Soft Crochet Cardigan 1</p>
+                        <p class="rating">⭐⭐⭐⭐☆ (4.6/5)</p>
+                        <p class="price">KES 1800</p>
+                        <a href="order.html?product=Soft%20Crochet%20Cardigan%201&price=1800&description=Soft%20Crochet%20Cardigan%201">
+                            <button>Order Now</button> </a>
+                    </div>
+                
+                    <!-- Cardigan 2 -->
+                    <div class="product-item">
+                        <a href="order.html?product=Elegant%20Crochet%20Cardigan%202&price=2000&description=Elegant%20Crochet%20Cardigan%202">
+                            <img src="cardigan2.jpg" alt="Elegant Crochet Cardigan 2">
+                        </a>
+                        <p>Elegant Crochet Cardigan 2</p>
+                        <p class="rating">⭐⭐⭐⭐⭐ (5/5)</p>
+                        <p class="price">KES 2000</p>
+                        <a href="order.html?product=Elegant%20Crochet%20Cardigan%202&price=2000&description=Elegant%20Crochet%20Cardigan%202">
+                            <button>Order Now</button></a>
+                    </div>
+                </section>
+                
+                <section class="product-section">
+                    <!-- Cardigan 3 -->
+                    <div class="product-item">
+                        <a href="order.html?product=Cozy%20Crochet%20Cardigan%203&price=1700&description=Cozy%20Crochet%20Cardigan%203">
+                            <img src="cardigan.jpeg" alt="Cozy Crochet Cardigan 3">
+                        </a>
+                        <p>Cozy Crochet Cardigan 3</p>
+                        <p class="rating">⭐⭐⭐⭐☆ (4.7/5)</p>
+                        <p class="price">KES 1700</p>
+                        <a href="order.html?product=Cozy%20Crochet%20Cardigan%203&price=1700&description=Cozy%20Crochet%20Cardigan%203">
+                            <button>Order Now</button></a>
+                    </div>
+                
+                    <!-- Cardigan 4 -->
+                    <div class="product-item">
+                        <a href="order.html?product=Chic%20Crochet%20Cardigan%204&price=2200&description=Chic%20Crochet%20Cardigan%204">
+                            <img src="cardigan4.jpg" alt="Chic Crochet Cardigan 4">
+                        </a>
+                        <p>Chic Crochet Cardigan 4</p>
+                        <p class="rating">⭐⭐⭐⭐⭐ (5/5)</p>
+                        <p class="price">KES 2200</p>
+                        <a href="order.html?product=Chic%20Crochet%20Cardigan%204&price=2200&description=Chic%20Crochet%20Cardigan%204">
+                            <button>Order Now</button></a>
+                    </div>
+                </section>
+                
+                <section class="product-section">
+                    <!-- Cardigan 5 -->
+                    <div class="product-item">
+                        <a href="order.html?product=Luxury%20Crochet%20Cardigan%205&price=2300&description=Luxury%20Crochet%20Cardigan%205">
+                            <img src="cardigan5.jpg" alt="Luxury Crochet Cardigan 5">
+                        </a>
+                        <p>Luxury Crochet Cardigan 5</p>
+                        <p class="rating">⭐⭐⭐⭐☆ (4.8/5)</p>
+                        <p class="price">KES 2300</p>
+                        <a href="order.html?product=Luxury%20Crochet%20Cardigan%205&price=2300&description=Luxury%20Crochet%20Cardigan%205" >
+            <button>Order Now</button></a>
+                    </div>
+                
+                    <!-- Cardigan 6 -->
+                    <div class="product-item">
+                        <a href="order.html?product=Classic%20Crochet%20Cardigan%206&price=2100&description=Classic%20Crochet%20Cardigan%206">
+                            <img src="cardigan6.jpg" alt="Classic Crochet Cardigan 6">
+                        </a>
+                        <p>Classic Crochet Cardigan 6</p>
+                        <p class="rating">⭐⭐⭐⭐☆ (4.5/5)</p>
+                        <p class="price">KES 2100</p>
+                        <a href="order.html?product=Classic%20Crochet%20Cardigan%206&price=2100&description=Classic%20Crochet%20Cardigan%206" >
+            <button>Order Now</button></a>
+                    </div>
+                </section>
+                
+                <section class="product-section">
+                    <!-- Cardigan 7 -->
+                    <div class="product-item">
+                        <a href="order.html?product=Comfortable%20Crochet%20Cardigan%207&price=2500&description=Comfortable%20Crochet%20Cardigan%207">
+                            <img src="Crochet Jacket from Squares.jpg" alt="Comfortable Crochet Cardigan 7">
+                        </a>
+                        <p>Comfortable Crochet Cardigan 7</p>
+                        <p class="rating">⭐⭐⭐⭐⭐ (5/5)</p>
+                        <p class="price">KES 2500</p>
+                        <a href="order.html?product=Comfortable%20Crochet%20Cardigan%207&price=2500&description=Comfortable%20Crochet%20Cardigan%207" class="btn">Order Now</a>
+                    </div>
+                </section>
+                
+            </section>
+        </section>
+
+        <!-- Category: Hats -->
+        <section id="hats" class="category-section">
+            <h2>Hats</h2>
+                <section class="product-section">
+                    <!-- Hat 1 -->
+                    <div class="product-item">
+                        <a href="order.html?product=Elegant%20Crochet%20Hat%201&price=1000&description=Elegant%20Crochet%20Hat%201">
+                            <img src="hat1.jpg" alt="Elegant Crochet Hat 1">
+                        </a>
+                        <p>Elegant Crochet Hat 1</p>
+                        <p class="rating">⭐⭐⭐⭐☆ (4.6/5)</p>
+                        <p class="price">KES 1000</p>
+                        <a href="order.html?product=Elegant%20Crochet%20Hat%201&price=1000&description=Elegant%20Crochet%20Hat%201" >
+            <button>Order Now</button></a>
+                    </div>
+                
+                    <!-- Hat 2 -->
+                    <div class="product-item">
+                        <a href="order.html?product=Trendy%20Crochet%20Hat%202&price=1100&description=Trendy%20Crochet%20Hat%202">
+                            <img src="hat2.jpg" alt="Trendy Crochet Hat 2">
+                        </a>
+                        <p>Trendy Crochet Hat 2</p>
+                        <p class="rating">⭐⭐⭐⭐⭐ (5/5)</p>
+                        <p class="price">KES 1100</p>
+                        <a href="order.html?product=Trendy%20Crochet%20Hat%202&price=1100&description=Trendy%20Crochet%20Hat%202" >
+            <button>Order Now</button></a>
+                    </div>
+                </section>
+                
+                <section class="product-section">
+                    <!-- Hat 3 -->
+                    <div class="product-item">
+                        <a href="order.html?product=Cozy%20Crochet%20Hat%203&price=950&description=Cozy%20Crochet%20Hat%203">
+                            <img src="hat3.jpg" alt="Cozy Crochet Hat 3">
+                        </a>
+                        <p>Cozy Crochet Hat 3</p>
+                        <p class="rating">⭐⭐⭐⭐☆ (4.5/5)</p>
+                        <p class="price">KES 950</p>
+                        <a href="order.html?product=Cozy%20Crochet%20Hat%203&price=950&description=Cozy%20Crochet%20Hat%203" >
+            <button>Order Now</button></a>
+                    </div>
+                
+                    <!-- Hat 4 -->
+                    <div class="product-item">
+                        <a href="order.html?product=Chic%20Crochet%20Hat%204&price=1200&description=Chic%20Crochet%20Hat%204">
+                            <img src="hat4.jpg" alt="Chic Crochet Hat 4">
+                        </a>
+                        <p>Chic Crochet Hat 4</p>
+                        <p class="rating">⭐⭐⭐⭐☆ (4.7/5)</p>
+                        <p class="price">KES 1200</p>
+                        <a href="order.html?product=Chic%20Crochet%20Hat%204&price=1200&description=Chic%20Crochet%20Hat%204" >
+            <button>Order Now</button></a>
+                    </div>
+                </section>
+                
+                <section class="product-section">
+                    <!-- Hat 5 -->
+                    <div class="product-item">
+                        <a href="order.html?product=Classic%20Crochet%20Hat%205&price=1150&description=Classic%20Crochet%20Hat%205">
+                            <img src="hat5.jpg" alt="Classic Crochet Hat 5">
+                        </a>
+                        <p>Classic Crochet Hat 5</p>
+                        <p class="rating">⭐⭐⭐⭐☆ (4.8/5)</p>
+                        <p class="price">KES 1150</p>
+                        <a href="order.html?product=Classic%20Crochet%20Hat%205&price=1150&description=Classic%20Crochet%20Hat%205" >
+            <button>Order Now</button></a>
+                    </div>
+                
+                    <!-- Hat 6 -->
+                    <div class="product-item">
+                        <a href="order.html?product=Fashionable%20Crochet%20Hat%206&price=1300&description=Fashionable%20Crochet%20Hat%206">
+                            <img src="crochet checkers hat.jpg" alt="Fashionable Crochet Hat 6">
+                        </a>
+                        <p>Fashionable Crochet Hat 6</p>
+                        <p class="rating">⭐⭐⭐⭐⭐ (5/5)</p>
+                        <p class="price">KES 1300</p>
+                        <a href="order.html?product=Fashionable%20Crochet%20Hat%206&price=1300&description=Fashionable%20Crochet%20Hat%206" >
+            <button>Order Now</button></a>
+                    </div>
+                </section>
+                
+                <section class="product-section">
+                    <!-- Hat 7 -->
+                    <div class="product-item">
+                        <a href="order.html?product=Summer%20Crochet%20Hat%207&price=1250&description=Summer%20Crochet%20Hat%207">
+                            <img src="bbe98344-9ca8-4dcd-906d-e1088307e807.jpg" alt="Summer Crochet Hat 7">
+                        </a>
+                        <p>Summer Crochet Hat 7</p>
+                        <p class="rating">⭐⭐⭐⭐☆ (4.6/5)</p>
+                        <p class="price">KES 1250</p>
+                        <a href="order.html?product=Summer%20Crochet%20Hat%207&price=1250&description=Summer%20Crochet%20Hat%207" >
+            <button>Order Now</button></a>
+                    </div>
+                </section>
+                
+            </section>
+        </section>
+
+        <!-- Category: Sweaters -->
+        <section id="sweaters" class="category-section">
+            <h2>Sweaters</h2>
+                <section class="product-section">
+                    <!-- Sweater 1 -->
+                    <div class="product-item">
+                        <a href="order.html?product=Cozy%20Crochet%20Sweater%201&price=1500&description=Cozy%20Crochet%20Sweater%201">
+                            <img src="sweater1.jpg" alt="Cozy Crochet Sweater 1">
+                        </a>
+                        <p>Cozy Crochet Sweater 1</p>
+                        <p class="rating">⭐⭐⭐⭐☆ (4.5/5)</p>
+                        <p class="price">KES 1500</p>
+                        <a href="order.html?product=Cozy%20Crochet%20Sweater%201&price=1500&description=Cozy%20Crochet%20Sweater%201" >
+            <button>Order Now</button></a>
+                    </div>
+                
+                    <!-- Sweater 2 -->
+                    <div class="product-item">
+                        <a href="order.html?product=Stylish%20Crochet%20Sweater%202&price=1600&description=Stylish%20Crochet%20Sweater%202">
+                            <img src="sweater2.jpg" alt="Stylish Crochet Sweater 2">
+                        </a>
+                        <p>Stylish Crochet Sweater 2</p>
+                        <p class="rating">⭐⭐⭐⭐⭐ (5/5)</p>
+                        <p class="price">KES 1600</p>
+                        <a href="order.html?product=Stylish%20Crochet%20Sweater%202&price=1600&description=Stylish%20Crochet%20Sweater%202" >
+            <button>Order Now</button></a>
+                    </div>
+                </section>
+                
+                <section class="product-section">
+                    <!-- Sweater 3 -->
+                    <div class="product-item">
+                        <a href="order.html?product=Chic%20Crochet%20Sweater%203&price=1450&description=Chic%20Crochet%20Sweater%203">
+                            <img src="sweater3.jpg" alt="Chic Crochet Sweater 3">
+                        </a>
+                        <p>Chic Crochet Sweater 3</p>
+                        <p class="rating">⭐⭐⭐⭐☆ (4.3/5)</p>
+                        <p class="price">KES 1450</p>
+                        <a href="order.html?product=Chic%20Crochet%20Sweater%203&price=1450&description=Chic%20Crochet%20Sweater%203" >
+            <button>Order Now</button></a>
+                    </div>
+                
+                    <!-- Sweater 4 -->
+                    <div class="product-item">
+                        <a href="order.html?product=Warm%20Crochet%20Sweater%204&price=1400&description=Warm%20Crochet%20Sweater%204">
+                            <img src="sweater4.jpg" alt="Warm Crochet Sweater 4">
+                        </a>
+                        <p>Warm Crochet Sweater 4</p>
+                        <p class="rating">⭐⭐⭐⭐☆ (4.6/5)</p>
+                        <p class="price">KES 1400</p>
+                        <a href="order.html?product=Warm%20Crochet%20Sweater%204&price=1400&description=Warm%20Crochet%20Sweater%204" >
+            <button>Order Now</button></a>
+                    </div>
+                </section>
+                
+                <section class="product-section">
+                    <!-- Sweater 5 -->
+                    <div class="product-item">
+                        <a href="order.html?product=Comfy%20Crochet%20Sweater%205&price=1350&description=Comfy%20Crochet%20Sweater%205">
+                            <img src="sweater5.jpg" alt="Comfy Crochet Sweater 5">
+                        </a>
+                        <p>Comfy Crochet Sweater 5</p>
+                        <p class="rating">⭐⭐⭐⭐☆ (4.7/5)</p>
+                        <p class="price">KES 1350</p>
+                        <a href="order.html?product=Comfy%20Crochet%20Sweater%205&price=1350&description=Comfy%20Crochet%20Sweater%205" >
+            <button>Order Now</button></a>
+                    </div>
+                
+                    <!-- Sweater 6 -->
+                    <div class="product-item">
+                        <a href="order.html?product=Elegant%20Crochet%20Sweater%206&price=1550&description=Elegant%20Crochet%20Sweater%206">
+                            <img src="download (3).jpg" alt="Elegant Crochet Sweater 6">
+                        </a>
+                        <p>Elegant Crochet Sweater 6</p>
+                        <p class="rating">⭐⭐⭐⭐⭐ (5/5)</p>
+                        <p class="price">KES 1550</p>
+                        <a href="order.html?product=Elegant%20Crochet%20Sweater%206&price=1550&description=Elegant%20Crochet%20Sweater%206" >
+            <button>Order Now</button></a>
+                    </div>
+                </section>
+                
+                <section class="product-section">
+                    <!-- Sweater 7 -->
+                    <div class="product-item">
+                        <a href="order.html?product=Trendy%20Crochet%20Sweater%207&price=1650&description=Trendy%20Crochet%20Sweater%207">
+                            <img src="download (4).jpg" alt="Trendy Crochet Sweater 7">
+                        </a>
+                        <p>Trendy Crochet Sweater 7</p>
+                        <p class="rating">⭐⭐⭐⭐☆ (4.8/5)</p>
+                        <p class="price">KES 1650</p>
+                        <a href="order.html?product=Trendy%20Crochet%20Sweater%207&price=1650&description=Trendy%20Crochet%20Sweater%207" >
+            <button>Order Now</button></a>
+                    </div>
+                </section>
+                
+        <!-- Continue the same for the other categories like Sweater Vests, Shorts, etc. -->
+                 <!-- Category: Sweater Vests -->
+        <section id="sweatervests" class="category-section">
+            <h2>Sweater Vests</h2>
+            <section class="product-section">
+                <!-- Product 1 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Sweater%20Vest%201&price=1400&description=Crochet%20Sweater%20Vest%201">
+                        <img src="sweatervest3.jpg" alt="Sweater Vest 1">
+                    </a>
+                    <p>Charming Crochet Sweater Vest 1</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.6/5)</p>
+                    <p class="price">KES 1400</p>
+                    <a href="order.html?product=Crochet%20Sweater%20Vest%201&price=1400&description=Crochet%20Sweater%20Vest%201" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Sweater%20Vest%202&price=1450&description=Crochet%20Sweater%20Vest%202">
+                        <img src="sweatervest4.jpg" alt="Sweater Vest 2">
+                    </a>
+                    <p>Cozy Crochet Sweater Vest 2</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.4/5)</p>
+                    <p class="price">KES 1450</p>
+                    <a href="order.html?product=Crochet%20Sweater%20Vest%202&price=1450&description=Crochet%20Sweater%20Vest%202" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Sweater%20Vest%203&price=1500&description=Crochet%20Sweater%20Vest%203">
+                        <img src="sweatervest5.jpg" alt="Sweater Vest 3">
+                    </a>
+                    <p>Stylish Crochet Sweater Vest 3</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.7/5)</p>
+                    <p class="price">KES 1500</p>
+                    <a href="order.html?product=Crochet%20Sweater%20Vest%203&price=1500&description=Crochet%20Sweater%20Vest%203" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Sweater%20Vest%204&price=1550&description=Crochet%20Sweater%20Vest%204">
+                        <img src="sweatervest6.jpg" alt="Sweater Vest 4">
+                    </a>
+                    <p>Warm Crochet Sweater Vest 4</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.6/5)</p>
+                    <p class="price">KES 1550</p>
+                    <a href="order.html?product=Crochet%20Sweater%20Vest%204&price=1550&description=Crochet%20Sweater%20Vest%204" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Sweater%20Vest%205&price=1600&description=Crochet%20Sweater%20Vest%205">
+                        <img src="sweatervest7.png" alt="Sweater Vest 5">
+                    </a>
+                    <p>Elegant Crochet Sweater Vest 5</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.8/5)</p>
+                    <p class="price">KES 1600</p>
+                    <a href="order.html?product=Crochet%20Sweater%20Vest%205&price=1600&description=Crochet%20Sweater%20Vest%205" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Sweater%20Vest%206&price=1650&description=Crochet%20Sweater%20Vest%206">
+                        <img src="sweatervest1.jpg" alt="Sweater Vest 6">
+                    </a>
+                    <p>Cozy Crochet Sweater Vest 6</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.3/5)</p>
+                    <p class="price">KES 1650</p>
+                    <a href="order.html?product=Crochet%20Sweater%20Vest%206&price=1650&description=Crochet%20Sweater%20Vest%206" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Sweater%20Vest%207&price=1700&description=Crochet%20Sweater%20Vest%207">
+                        <img src="sweatervest2.jpg" alt="Sweater Vest 7">
+                    </a>
+                    <p>Luxury Crochet Sweater Vest 7</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.5/5)</p>
+                    <p class="price">KES 1700</p>
+                    <a href="order.html?product=Crochet%20Sweater%20Vest%207&price=1700&description=Crochet%20Sweater%20Vest%207" >
+            <button>Order Now</button></a>
+                </div>
+            </section>
+        </section>
+
+        <!-- Category: Shorts -->
+        <section id="shorts" class="category-section">
+            <h2>Shorts</h2>
+            <section class="product-section">
+                <!-- Product 1 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Shorts%201&price=1000&description=Crochet%20Shorts%201">
+                        <img src="short1.jpg" alt="Crochet Shorts 1">
+                    </a>
+                    <p>Casual Crochet Shorts 1</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.6/5)</p>
+                    <p class="price">KES 1000</p>
+                    <a href="order.html?product=Crochet%20Shorts%201&price=1000&description=Crochet%20Shorts%201" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Shorts%202&price=1100&description=Crochet%20Shorts%202">
+                        <img src="short2.jpg" alt="Crochet Shorts 2">
+                    </a>
+                    <p>Trendy Crochet Shorts 2</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.4/5)</p>
+                    <p class="price">KES 1100</p>
+                    <a href="order.html?product=Crochet%20Shorts%202&price=1100&description=Crochet%20Shorts%202" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Shorts%203&price=1200&description=Crochet%20Shorts%203">
+                        <img src="short.jpg" alt="Crochet Shorts 3">
+                    </a>
+                    <p>Comfortable Crochet Shorts 3</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.8/5)</p>
+                    <p class="price">KES 1200</p>
+                    <a href="order.html?product=Crochet%20Shorts%203&price=1200&description=Crochet%20Shorts%203" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Shorts%204&price=1250&description=Crochet%20Shorts%204">
+                        <img src="short4.jpg" alt="Crochet Shorts 4">
+                    </a>
+                    <p>Stylish Crochet Shorts 4</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.5/5)</p>
+                    <p class="price">KES 1250</p>
+                    <a href="order.html?product=Crochet%20Shorts%204&price=1250&description=Crochet%20Shorts%204" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Shorts%205&price=1300&description=Crochet%20Shorts%205">
+                        <img src="short5.jpg" alt="Crochet Shorts 5">
+                    </a>
+                    <p>Elegant Crochet Shorts 5</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.3/5)</p>
+                    <p class="price">KES 1300</p>
+                    <a href="order.html?product=Crochet%20Shorts%205&price=1300&description=Crochet%20Shorts%205" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Shorts%206&price=1350&description=Crochet%20Shorts%206">
+                        <img src="short6.jpg" alt="Crochet Shorts 6">
+                    </a>
+                    <p>Casual Crochet Shorts 6</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.4/5)</p>
+                    <p class="price">KES 1350</p>
+                    <a href="order.html?product=Crochet%20Shorts%206&price=1350&description=Crochet%20Shorts%206" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Shorts%207&price=1400&description=Crochet%20Shorts%207">
+                        <img src="Shorts de crochê quadrados Boho Grandma, shorts masculinos Boho marrons, shorts étnicos masculinos coloridos, shorts de malha à mão de verão, shorts de crochê hippie - Etsy Portugal.jpg" alt="Crochet Shorts 7">
+                    </a>
+                    <p>Comfort Crochet Shorts 7</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.6/5)</p>
+                    <p class="price">KES 1400</p>
+                    <a href="order.html?product=Crochet%20Shorts%207&price=1400&description=Crochet%20Shorts%207" >
+            <button>Order Now</button></a>
+                </div>
+            </section>
+        </section>
+
+        <!-- Add remaining categories in the same structure (Shirts, Trousers, Dresses, Skirts, Tops, Beachwear, Tote Bags, Beanies, Ruffle Hats, Shrugs) -->
+                 <!-- Category: Shirts -->
+        <section id="shirts" class="category-section">
+            <h2>Shirts</h2>
+            <section class="product-section">
+                <!-- Product 1 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Shirt%201&price=1500&description=Crochet%20Shirt%201">
+                        <img src="shirt1.jpg" alt="Crochet Shirt 1">
+                    </a>
+                    <p>Classic Crochet Shirt 1</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.5/5)</p>
+                    <p class="price">KES 1500</p>
+                    <a href="order.html?product=Crochet%20Shirt%201&price=1500&description=Crochet%20Shirt%201" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Shirt%202&price=1550&description=Crochet%20Shirt%202">
+                        <img src="shirt2.jpg" alt="Crochet Shirt 2">
+                    </a>
+                    <p>Modern Crochet Shirt 2</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.3/5)</p>
+                    <p class="price">KES 1550</p>
+                    <a href="order.html?product=Crochet%20Shirt%202&price=1550&description=Crochet%20Shirt%202" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Shirt%203&price=1600&description=Crochet%20Shirt%203">
+                        <img src="shirt3.jpg" alt="Crochet Shirt 3">
+                    </a>
+                    <p>Elegant Crochet Shirt 3</p>
+                    <p class="rating">⭐⭐⭐⭐⭐ (5/5)</p>
+                    <p class="price">KES 1600</p>
+                    <a href="order.html?product=Crochet%20Shirt%203&price=1600&description=Crochet%20Shirt%203" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Shirt%204&price=1650&description=Crochet%20Shirt%204">
+                        <img src="shirt4.jpg" alt="Crochet Shirt 4">
+                    </a>
+                    <p>Stylish Crochet Shirt 4</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.6/5)</p>
+                    <p class="price">KES 1650</p>
+                    <a href="order.html?product=Crochet%20Shirt%204&price=1650&description=Crochet%20Shirt%204" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Shirt%205&price=1700&description=Crochet%20Shirt%205">
+                        <img src="shirt5.jpg" alt="Crochet Shirt 5">
+                    </a>
+                    <p>Trendy Crochet Shirt 5</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.7/5)</p>
+                    <p class="price">KES 1700</p>
+                    <a href="order.html?product=Crochet%20Shirt%205&price=1700&description=Crochet%20Shirt%205" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Shirt%206&price=1750&description=Crochet%20Shirt%206">
+                        <img src="download (6).jpg" alt="Crochet Shirt 6">
+                    </a>
+                    <p>Casual Crochet Shirt 6</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.5/5)</p>
+                    <p class="price">KES 1750</p>
+                    <a href="order.html?product=Crochet%20Shirt%206&price=1750&description=Crochet%20Shirt%206" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Shirt%207&price=1800&description=Crochet%20Shirt%207">
+                        <img src="download (5).jpg" alt="Crochet Shirt 7">
+                    </a>
+                    <p>Chic Crochet Shirt 7</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.6/5)</p>
+                    <p class="price">KES 1800</p>
+                    <a href="order.html?product=Crochet%20Shirt%207&price=1800&description=Crochet%20Shirt%207" >
+            <button>Order Now</button></a>
+                </div>
+            </section>
+        </section>
+
+        <!-- Category: Trousers -->
+        <section id="trousers" class="category-section">
+            <h2>Trousers</h2>
+            <section class="product-section">
+                <!-- Product 1 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Trousers%201&price=1700&description=Crochet%20Trousers%201">
+                        <img src="trouser1.jpg" alt="Crochet Trousers 1">
+                    </a>
+                    <p>Comfortable Crochet Trousers 1</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.5/5)</p>
+                    <p class="price">KES 1700</p>
+                    <a href="order.html?product=Crochet%20Trousers%201&price=1700&description=Crochet%20Trousers%201" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Trousers%202&price=1750&description=Crochet%20Trousers%202">
+                        <img src="trouser2.jpg" alt="Crochet Trousers 2">
+                    </a>
+                    <p>Elegant Crochet Trousers 2</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.6/5)</p>
+                    <p class="price">KES 1750</p>
+                    <a href="order.html?product=Crochet%20Trousers%202&price=1750&description=Crochet%20Trousers%202" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Trousers%203&price=1800&description=Crochet%20Trousers%203">
+                        <img src="trouser3.jpg" alt="Crochet Trousers 3">
+                    </a>
+                    <p>Stylish Crochet Trousers 3</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.8/5)</p>
+                    <p class="price">KES 1800</p>
+                    <a href="order.html?product=Crochet%20Trousers%203&price=1800&description=Crochet%20Trousers%203" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Trousers%204&price=1850&description=Crochet%20Trousers%204">
+                        <img src="trouser4.jpg" alt="Crochet Trousers 4">
+                    </a>
+                    <p>Chic Crochet Trousers 4</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.4/5)</p>
+                    <p class="price">KES 1850</p>
+                    <a href="order.html?product=Crochet%20Trousers%204&price=1850&description=Crochet%20Trousers%204" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Trousers%205&price=1900&description=Crochet%20Trousers%205">
+                        <img src="trouser5.jpg" alt="Crochet Trousers 5">
+                    </a>
+                    <p>Classic Crochet Trousers 5</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.5/5)</p>
+                    <p class="price">KES 1900</p>
+                    <a href="order.html?product=Crochet%20Trousers%205&price=1900&description=Crochet%20Trousers%205" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Trousers%206&price=1950&description=Crochet%20Trousers%206">
+                        <img src="trouser6.jpg" alt="Crochet Trousers 6">
+                    </a>
+                    <p>Casual Crochet Trousers 6</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.7/5)</p>
+                    <p class="price">KES 1950</p>
+                    <a href="order.html?product=Crochet%20Trousers%206&price=1950&description=Crochet%20Trousers%206" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Trousers%207&price=2000&description=Crochet%20Trousers%207">
+                        <img src="trouser7.jpg" alt="Crochet Trousers 7">
+                    </a>
+                    <p>Trendy Crochet Trousers 7</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.8/5)</p>
+                    <p class="price">KES 2000</p>
+                    <a href="order.html?product=Crochet%20Trousers%207&price=2000&description=Crochet%20Trousers%207" >
+            <button>Order Now</button></a>
+                </div>
+            </section>
+        </section>
+
+        <!-- Add remaining categories like Dresses, Skirts, Tops, Beachwear, Tote Bags, Beanies, Ruffle Hats, Shrugs -->
+                 <!-- Category: Dresses -->
+        <section id="dresses" class="category-section">
+            <h2>Dresses</h2>
+            <section class="product-section">
+                <!-- Product 1 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Dress%201&price=2200&description=Crochet%20Dress%201">
+                        <img src="dress1.jpg" alt="Crochet Dress 1">
+                    </a>
+                    <p>Elegant Crochet Dress 1</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.6/5)</p>
+                    <p class="price">KES 2200</p>
+                    <a href="order.html?product=Crochet%20Dress%201&price=2200&description=Crochet%20Dress%201" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Dress%202&price=2300&description=Crochet%20Dress%202">
+                        <img src="dress2.jpg" alt="Crochet Dress 2">
+                    </a>
+                    <p>Boho Crochet Dress 2</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.5/5)</p>
+                    <p class="price">KES 2300</p>
+                    <a href="order.html?product=Crochet%20Dress%202&price=2300&description=Crochet%20Dress%202" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Dress%203&price=2400&description=Crochet%20Dress%203">
+                        <img src="dress3.jpg" alt="Crochet Dress 3">
+                    </a>
+                    <p>Chic Crochet Dress 3</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.7/5)</p>
+                    <p class="price">KES 2400</p>
+                    <a href="order.html?product=Crochet%20Dress%203&price=2400&description=Crochet%20Dress%203" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Dress%204&price=2500&description=Crochet%20Dress%204">
+                        <img src="dress4.jpg" alt="Crochet Dress 4">
+                    </a>
+                    <p>Casual Crochet Dress 4</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.6/5)</p>
+                    <p class="price">KES 2500</p>
+                    <a href="order.html?product=Crochet%20Dress%204&price=2500&description=Crochet%20Dress%204" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Dress%205&price=2600&description=Crochet%20Dress%205">
+                        <img src="dress5.jpg" alt="Crochet Dress 5">
+                    </a>
+                    <p>Summer Crochet Dress 5</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.8/5)</p>
+                    <p class="price">KES 2600</p>
+                    <a href="order.html?product=Crochet%20Dress%205&price=2600&description=Crochet%20Dress%205" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Dress%206&price=2700&description=Crochet%20Dress%206">
+                        <img src="dress6.jpg" alt="Crochet Dress 6">
+                    </a>
+                    <p>Bohemian Crochet Dress 6</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.5/5)</p>
+                    <p class="price">KES 2700</p>
+                    <a href="order.html?product=Crochet%20Dress%206&price=2700&description=Crochet%20Dress%206" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Dress%207&price=2800&description=Crochet%20Dress%207">
+                        <img src="dress7.jpg" alt="Crochet Dress 7">
+                    </a>
+                    <p>Vibrant Crochet Dress 7</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.7/5)</p>
+                    <p class="price">KES 2800</p>
+                    <a href="order.html?product=Crochet%20Dress%207&price=2800&description=Crochet%20Dress%207" >
+            <button>Order Now</button></a>
+                </div>
+            </section>
+        </section>
+
+        <!-- Category: Skirts -->
+        <section id="skirts" class="category-section">
+            <h2>Skirts</h2>
+            <section class="product-section">
+                <!-- Product 1 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Skirt%201&price=1500&description=Crochet%20Skirt%201">
+                        <img src="skirt1.jpg" alt="Crochet Skirt 1">
+                    </a>
+                    <p>Trendy Crochet Skirt 1</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.5/5)</p>
+                    <p class="price">KES 1500</p>
+                    <a href="order.html?product=Crochet%20Skirt%201&price=1500&description=Crochet%20Skirt%201" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Skirt%202&price=1600&description=Crochet%20Skirt%202">
+                        <img src="skirt2.jpg" alt="Crochet Skirt 2">
+                    </a>
+                    <p>Bohemian Crochet Skirt 2</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.6/5)</p>
+                    <p class="price">KES 1600</p>
+                    <a href="order.html?product=Crochet%20Skirt%202&price=1600&description=Crochet%20Skirt%202" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Skirt%203&price=1700&description=Crochet%20Skirt%203">
+                        <img src="skirt3.jpg" alt="Crochet Skirt 3">
+                    </a>
+                    <p>Elegant Crochet Skirt 3</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.7/5)</p>
+                    <p class="price">KES 1700</p>
+                    <a href="order.html?product=Crochet%20Skirt%203&price=1700&description=Crochet%20Skirt%203" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Skirt%204&price=1800&description=Crochet%20Skirt%204">
+                        <img src="skirt4.jpg" alt="Crochet Skirt 4">
+                    </a>
+                    <p>Casual Crochet Skirt 4</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.5/5)</p>
+                    <p class="price">KES 1800</p>
+                    <a href="order.html?product=Crochet%20Skirt%204&price=1800&description=Crochet%20Skirt%204" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Skirt%205&price=1900&description=Crochet%20Skirt%205">
+                        <img src="skirt5.jpg" alt="Crochet Skirt 5">
+                    </a>
+                    <p>Chic Crochet Skirt 5</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.6/5)</p>
+                    <p class="price">KES 1900</p>
+                    <a href="order.html?product=Crochet%20Skirt%205&price=1900&description=Crochet%20Skirt%205" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Skirt%206&price=2000&description=Crochet%20Skirt%206">
+                        <img src="skirt6.jpg" alt="Crochet Skirt 6">
+                    </a>
+                    <p>Vibrant Crochet Skirt 6</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.7/5)</p>
+                    <p class="price">KES 2000</p>
+                    <a href="order.html?product=Crochet%20Skirt%206&price=2000&description=Crochet%20Skirt%206" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Skirt%207&price=2100&description=Crochet%20Skirt%207">
+                        <img src="skirt7.jpg" alt="Crochet Skirt 7">
+                    </a>
+                    <p>Trendy Crochet Skirt 7</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.8/5)</p>
+                    <p class="price">KES 2100</p>
+                    <a href="order.html?product=Crochet%20Skirt%207&price=2100&description=Crochet%20Skirt%207" >
+            <button>Order Now</button></a>
+                </div>
+            </section>
+        </section>
+
+        <!-- Additional Categories: Tops, Beachwear, Tote Bags, Beanies, Ruffle Hats, Shrugs -->
+        <!-- Similar format for the other categories if needed -->
+                 <!-- Category: Tops -->
+        <section id="tops" class="category-section">
+            <h2>Tops</h2>
+            <section class="product-section">
+                <!-- Product 1 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Top%201&price=1000&description=Crochet%20Top%201">
+                        <img src="top1.jpg" alt="Crochet Top 1">
+                    </a>
+                    <p>Casual Crochet Top 1</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.6/5)</p>
+                    <p class="price">KES 1000</p>
+                    <a href="order.html?product=Crochet%20Top%201&price=1000&description=Crochet%20Top%201" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Top%202&price=1100&description=Crochet%20Top%202">
+                        <img src="top2.jpg" alt="Crochet Top 2">
+                    </a>
+                    <p>Boho Crochet Top 2</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.5/5)</p>
+                    <p class="price">KES 1100</p>
+                    <a href="order.html?product=Crochet%20Top%202&price=1100&description=Crochet%20Top%202" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Top%203&price=1200&description=Crochet%20Top%203">
+                        <img src="top3.jpg" alt="Crochet Top 3">
+                    </a>
+                    <p>Elegant Crochet Top 3</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.7/5)</p>
+                    <p class="price">KES 1200</p>
+                    <a href="order.html?product=Crochet%20Top%203&price=1200&description=Crochet%20Top%203" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Top%204&price=1300&description=Crochet%20Top%204">
+                        <img src="top4.jpg" alt="Crochet Top 4">
+                    </a>
+                    <p>Summer Crochet Top 4</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.6/5)</p>
+                    <p class="price">KES 1300</p>
+                    <a href="order.html?product=Crochet%20Top%204&price=1300&description=Crochet%20Top%204" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Top%205&price=1400&description=Crochet%20Top%205">
+                        <img src="top5.jpg" alt="Crochet Top 5">
+                    </a>
+                    <p>Chic Crochet Top 5</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.8/5)</p>
+                    <p class="price">KES 1400</p>
+                    <a href="order.html?product=Crochet%20Top%205&price=1400&description=Crochet%20Top%205" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Top%206&price=1500&description=Crochet%20Top%206">
+                        <img src="top6.jpg" alt="Crochet Top 6">
+                    </a>
+                    <p>Trendy Crochet Top 6</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.7/5)</p>
+                    <p class="price">KES 1500</p>
+                    <a href="order.html?product=Crochet%20Top%206&price=1500&description=Crochet%20Top%206" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Top%207&price=1600&description=Crochet%20Top%207">
+                        <img src="Free Crochet Top Outfit For Beginners _ Crochet Tops Free Patterns.jpg" alt="Crochet Top 7">
+                    </a>
+                    <p>Modern Crochet Top 7</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.9/5)</p>
+                    <p class="price">KES 1600</p>
+                    <a href="order.html?product=Crochet%20Top%207&price=1600&description=Crochet%20Top%207" >
+            <button>Order Now</button></a>
+                </div>
+            </section>
+        </section>
+
+        <!-- Category: Beachwear -->
+        <section id="beachwear" class="category-section">
+            <h2>Beachwear</h2>
+            <section class="product-section">
+                <!-- Product 1 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Beachwear%201&price=1800&description=Crochet%20Beachwear%201">
+                        <img src="beach1.jpg" alt="Crochet Beachwear 1">
+                    </a>
+                    <p>Relaxed Crochet Beachwear 1</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.7/5)</p>
+                    <p class="price">KES 1800</p>
+                    <a href="order.html?product=Crochet%20Beachwear%201&price=1800&description=Crochet%20Beachwear%201" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Beachwear%202&price=1900&description=Crochet%20Beachwear%202">
+                        <img src="beach2.jpg" alt="Crochet Beachwear 2">
+                    </a>
+                    <p>Vibrant Crochet Beachwear 2</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.6/5)</p>
+                    <p class="price">KES 1900</p>
+                    <a href="order.html?product=Crochet%20Beachwear%202&price=1900&description=Crochet%20Beachwear%202" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Beachwear%203&price=2000&description=Crochet%20Beachwear%203">
+                        <img src="beach3.jpg" alt="Crochet Beachwear 3">
+                    </a>
+                    <p>Coastal Crochet Beachwear 3</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.7/5)</p>
+                    <p class="price">KES 2000</p>
+                    <a href="order.html?product=Crochet%20Beachwear%203&price=2000&description=Crochet%20Beachwear%203" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Beachwear%204&price=2100&description=Crochet%20Beachwear%204">
+                        <img src="beach4.jpg" alt="Crochet Beachwear 4">
+                    </a>
+                    <p>Stylish Crochet Beachwear 4</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.8/5)</p>
+                    <p class="price">KES 2100</p>
+                    <a href="order.html?product=Crochet%20Beachwear%204&price=2100&description=Crochet%20Beachwear%204" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Beachwear%205&price=2200&description=Crochet%20Beachwear%205">
+                        <img src="beach5.jpg" alt="Crochet Beachwear 5">
+                    </a>
+                    <p>Summer Crochet Beachwear 5</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.7/5)</p>
+                    <p class="price">KES 2200</p>
+                    <a href="order.html?product=Crochet%20Beachwear%205&price=2200&description=Crochet%20Beachwear%205" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Beachwear%206&price=2300&description=Crochet%20Beachwear%206">
+                        <img src="beach6.jpg" alt="Crochet Beachwear 6">
+                    </a>
+                    <p>Cozy Crochet Beachwear 6</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.8/5)</p>
+                    <p class="price">KES 2300</p>
+                    <a href="order.html?product=Crochet%20Beachwear%206&price=2300&description=Crochet%20Beachwear%206" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Beachwear%207&price=2400&description=Crochet%20Beachwear%207">
+                        <img src="beach7.jpg" alt="Crochet Beachwear 7">
+                    </a>
+                    <p>Elegant Crochet Beachwear 7</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.7/5)</p>
+                    <p class="price">KES 2400</p>
+                    <a href="order.html?product=Crochet%20Beachwear%207&price=2400&description=Crochet%20Beachwear%207" >
+            <button>Order Now</button></a>
+                </div>
+            </section>
+        </section>
+
+        <!-- Categories for Tote Bags, Beanies, Ruffle Hats, Shrugs -->
+        <!-- These sections can be formatted similarly if needed -->
+                 <!-- Category: Tote Bags -->
+        <section id="totebags" class="category-section">
+            <h2>Tote Bags</h2>
+            <section class="product-section">
+                <!-- Product 1 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Tote%20Bag%201&price=1500&description=Crochet%20Tote%20Bag%201">
+                        <img src="totebag1.jpg" alt="Crochet Tote Bag 1">
+                    </a>
+                    <p>Stylish Crochet Tote Bag 1</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.5/5)</p>
+                    <p class="price">KES 1500</p>
+                    <a href="order.html?product=Crochet%20Tote%20Bag%201&price=1500&description=Crochet%20Tote%20Bag%201" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Tote%20Bag%202&price=1600&description=Crochet%20Tote%20Bag%202">
+                        <img src="totebag2.jpg" alt="Crochet Tote Bag 2">
+                    </a>
+                    <p>Chic Crochet Tote Bag 2</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.7/5)</p>
+                    <p class="price">KES 1600</p>
+                    <a href="order.html?product=Crochet%20Tote%20Bag%202&price=1600&description=Crochet%20Tote%20Bag%202" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Tote%20Bag%203&price=1700&description=Crochet%20Tote%20Bag%203">
+                        <img src="totebag3.jpg" alt="Crochet Tote Bag 3">
+                    </a>
+                    <p>Elegant Crochet Tote Bag 3</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.6/5)</p>
+                    <p class="price">KES 1700</p>
+                    <a href="order.html?product=Crochet%20Tote%20Bag%203&price=1700&description=Crochet%20Tote%20Bag%203" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Tote%20Bag%204&price=1800&description=Crochet%20Tote%20Bag%204">
+                        <img src="totebag4.jpg" alt="Crochet Tote Bag 4">
+                    </a>
+                    <p>Casual Crochet Tote Bag 4</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.5/5)</p>
+                    <p class="price">KES 1800</p>
+                    <a href="order.html?product=Crochet%20Tote%20Bag%204&price=1800&description=Crochet%20Tote%20Bag%204" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Tote%20Bag%205&price=1900&description=Crochet%20Tote%20Bag%205">
+                        <img src="totebag5.jpg" alt="Crochet Tote Bag 5">
+                    </a>
+                    <p>Vacation Crochet Tote Bag 5</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.8/5)</p>
+                    <p class="price">KES 1900</p>
+                    <a href="order.html?product=Crochet%20Tote%20Bag%205&price=1900&description=Crochet%20Tote%20Bag%205" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Tote%20Bag%206&price=2000&description=Crochet%20Tote%20Bag%206">
+                        <img src="totebag6.jpg" alt="Crochet Tote Bag 6">
+                    </a>
+                    <p>Travel Crochet Tote Bag 6</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.7/5)</p>
+                    <p class="price">KES 2000</p>
+                    <a href="order.html?product=Crochet%20Tote%20Bag%206&price=2000&description=Crochet%20Tote%20Bag%206" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Tote%20Bag%207&price=2100&description=Crochet%20Tote%20Bag%207">
+                        <img src="totebag7.jpg" alt="Crochet Tote Bag 7">
+                    </a>
+                    <p>Boho Crochet Tote Bag 7</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.6/5)</p>
+                    <p class="price">KES 2100</p>
+                    <a href="order.html?product=Crochet%20Tote%20Bag%207&price=2100&description=Crochet%20Tote%20Bag%207" >
+            <button>Order Now</button></a>
+                </div>
+            </section>
+        </section>
+
+        <!-- Category: Beanies -->
+        <section id="beanies" class="category-section">
+            <h2>Beanies</h2>
+            <section class="product-section">
+                <!-- Product 1 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Beanie%201&price=800&description=Crochet%20Beanie%201">
+                        <img src="beanie1.jpg" alt="Crochet Beanie 1">
+                    </a>
+                    <p>Warm Crochet Beanie 1</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.5/5)</p>
+                    <p class="price">KES 800</p>
+                    <a href="order.html?product=Crochet%20Beanie%201&price=800&description=Crochet%20Beanie%201" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Beanie%202&price=850&description=Crochet%20Beanie%202">
+                        <img src="beanie2.jpg" alt="Crochet Beanie 2">
+                    </a>
+                    <p>Cozy Crochet Beanie 2</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.7/5)</p>
+                    <p class="price">KES 850</p>
+                    <a href="order.html?product=Crochet%20Beanie%202&price=850&description=Crochet%20Beanie%202" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Beanie%203&price=900&description=Crochet%20Beanie%203">
+                        <img src="beanie3.jpg" alt="Crochet Beanie 3">
+                    </a>
+                    <p>Classic Crochet Beanie 3</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.6/5)</p>
+                    <p class="price">KES 900</p>
+                    <a href="order.html?product=Crochet%20Beanie%203&price=900&description=Crochet%20Beanie%203" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Beanie%204&price=950&description=Crochet%20Beanie%204">
+                        <img src="beanie4.jpg" alt="Crochet Beanie 4">
+                    </a>
+                    <p>Casual Crochet Beanie 4</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.8/5)</p>
+                    <p class="price">KES 950</p>
+                    <a href="order.html?product=Crochet%20Beanie%204&price=950&description=Crochet%20Beanie%204" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Beanie%205&price=1000&description=Crochet%20Beanie%205">
+                        <img src="beanie5.jpg" alt="Crochet Beanie 5">
+                    </a>
+                    <p>Winter Crochet Beanie 5</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.7/5)</p>
+                    <p class="price">KES 1000</p>
+                    <a href="order.html?product=Crochet%20Beanie%205&price=1000&description=Crochet%20Beanie%205" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Beanie%206&price=1100&description=Crochet%20Beanie%206">
+                        <img src="beanie6.jpg" alt="Crochet Beanie 6">
+                    </a>
+                    <p>Trendy Crochet Beanie 6</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.6/5)</p>
+                    <p class="price">KES 1100</p>
+                    <a href="order.html?product=Crochet%20Beanie%206&price=1100&description=Crochet%20Beanie%206" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Beanie%207&price=1200&description=Crochet%20Beanie%207">
+                        <img src="beanie7.jpg" alt="Crochet Beanie 7">
+                    </a>
+                    <p>Sporty Crochet Beanie 7</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.9/5)</p>
+                    <p class="price">KES 1200</p>
+                    <a href="order.html?product=Crochet%20Beanie%207&price=1200&description=Crochet%20Beanie%207" >
+            <button>Order Now</button></a>
+                </div>
+            </section>
+        </section>
+
+        <!-- Category: Ruffle Hats -->
+        <section id="rufflehats" class="category-section">
+            <h2>Ruffle Hats</h2>
+            <section class="product-section">
+                <!-- Product 1 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Ruffle%20Hat%201&price=950&description=Crochet%20Ruffle%20Hat%201">
+                        <img src="rufflehat1.jpg" alt="Crochet Ruffle Hat 1">
+                    </a>
+                    <p>Charming Crochet Ruffle Hat 1</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.5/5)</p>
+                    <p class="price">KES 950</p>
+                    <a href="order.html?product=Crochet%20Ruffle%20Hat%201&price=950&description=Crochet%20Ruffle%20Hat%201" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Ruffle%20Hat%202&price=1000&description=Crochet%20Ruffle%20Hat%202">
+                        <img src="rufflehat2.jpg" alt="Crochet Ruffle Hat 2">
+                    </a>
+                    <p>Elegant Crochet Ruffle Hat 2</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.7/5)</p>
+                    <p class="price">KES 1000</p>
+                    <a href="order.html?product=Crochet%20Ruffle%20Hat%202&price=1000&description=Crochet%20Ruffle%20Hat%202" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Ruffle%20Hat%203&price=1050&description=Crochet%20Ruffle%20Hat%203">
+                        <img src="rufflehat3.jpg" alt="Crochet Ruffle Hat 3">
+                    </a>
+                    <p>Trendy Crochet Ruffle Hat 3</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.6/5)</p>
+                    <p class="price">KES 1050</p>
+                    <a href="order.html?product=Crochet%20Ruffle%20Hat%203&price=1050&description=Crochet%20Ruffle%20Hat%203" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Ruffle%20Hat%204&price=1100&description=Crochet%20Ruffle%20Hat%204">
+                        <img src="rufflehat4.jpg" alt="Crochet Ruffle Hat 4">
+                    </a>
+                    <p>Cozy Crochet Ruffle Hat 4</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.8/5)</p>
+                    <p class="price">KES 1100</p>
+                    <a href="order.html?product=Crochet%20Ruffle%20Hat%204&price=1100&description=Crochet%20Ruffle%20Hat%204" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Ruffle%20Hat%205&price=1150&description=Crochet%20Ruffle%20Hat%205">
+                        <img src="rufflehat5.jpg" alt="Crochet Ruffle Hat 5">
+                    </a>
+                    <p>Summer Crochet Ruffle Hat 5</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.7/5)</p>
+                    <p class="price">KES 1150</p>
+                    <a href="order.html?product=Crochet%20Ruffle%20Hat%205&price=1150&description=Crochet%20Ruffle%20Hat%205" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Ruffle%20Hat%206&price=1200&description=Crochet%20Ruffle%20Hat%206">
+                        <img src="cranberry ruffle hat 🩷 #crochet #rufflehat.jpg" alt="Crochet Ruffle Hat 6">
+                    </a>
+                    <p>Elegant Crochet Ruffle Hat 6</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.8/5)</p>
+                    <p class="price">KES 1200</p>
+                    <a href="order.html?product=Crochet%20Ruffle%20Hat%206&price=1200&description=Crochet%20Ruffle%20Hat%206" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Ruffle%20Hat%207&price=1250&description=Crochet%20Ruffle%20Hat%207">
+                        <img src="red_ruffle_hat_with_pink_trim-removebg-preview.png" alt="Crochet Ruffle Hat 7">
+                    </a>
+                    <p>Modern Crochet Ruffle Hat 7</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.9/5)</p>
+                    <p class="price">KES 1250</p>
+                    <a href="order.html?product=Crochet%20Ruffle%20Hat%207&price=1250&description=Crochet%20Ruffle%20Hat%207" >
+            <button>Order Now</button></a>
+                </div>
+            </section>
+        </section>
+
+        <!-- Category: Shrugs -->
+        <section id="shrugs" class="category-section">
+            <h2>Shrugs</h2>
+            <section class="product-section">
+                <!-- Product 1 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Shrug%201&price=1300&description=Crochet%20Shrug%201">
+                        <img src="shrug1.jpg" alt="Crochet Shrug 1">
+                    </a>
+                    <p>Elegant Crochet Shrug 1</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.6/5)</p>
+                    <p class="price">KES 1300</p>
+                    <a href="order.html?product=Crochet%20Shrug%201&price=1300&description=Crochet%20Shrug%201" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Shrug%202&price=1400&description=Crochet%20Shrug%202">
+                        <img src="shrug2.jpg" alt="Crochet Shrug 2">
+                    </a>
+                    <p>Boho Crochet Shrug 2</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.7/5)</p>
+                    <p class="price">KES 1400</p>
+                    <a href="order.html?product=Crochet%20Shrug%202&price=1400&description=Crochet%20Shrug%202" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Shrug%203&price=1500&description=Crochet%20Shrug%203">
+                        <img src="shrug3.jpg" alt="Crochet Shrug 3">
+                    </a>
+                    <p>Casual Crochet Shrug 3</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.8/5)</p>
+                    <p class="price">KES 1500</p>
+                    <a href="order.html?product=Crochet%20Shrug%203&price=1500&description=Crochet%20Shrug%203" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Shrug%204&price=1600&description=Crochet%20Shrug%204">
+                        <img src="shrug4.jpg" alt="Crochet Shrug 4">
+                    </a>
+                    <p>Trendy Crochet Shrug 4</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.9/5)</p>
+                    <p class="price">KES 1600</p>
+                    <a href="order.html?product=Crochet%20Shrug%204&price=1600&description=Crochet%20Shrug%204" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Shrug%205&price=1700&description=Crochet%20Shrug%205">
+                        <img src="shrug5.jpg" alt="Crochet Shrug 5">
+                    </a>
+                    <p>Cozy Crochet Shrug 5</p>
+                    <p class="rating">⭐⭐⭐⭐ (4.6/5)</p>
+                    <p class="price">KES 1700</p>
+                    <a href="order.html?product=Crochet%20Shrug%205&price=1700&description=Crochet%20Shrug%205" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Shrug%206&price=1800&description=Crochet%20Shrug%206">
+                        <img src="Women's & Men's Clothing, Shop Online Fashion.jpg" alt="Crochet Shrug 6">
+                    </a>
+                    <p>Stylish Crochet Shrug 6</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.7/5)</p>
+                    <p class="price">KES 1800</p>
+                    <a href="order.html?product=Crochet%20Shrug%206&price=1800&description=Crochet%20Shrug%206" >
+            <button>Order Now</button></a>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-item">
+                    <a href="order.html?product=Crochet%20Shrug%207&price=1900&description=Crochet%20Shrug%207">
+                        <img src="shrug7.jpg" alt="Crochet Shrug 7">
+                    </a>
+                    <p>Boho Crochet Shrug 7</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.8/5)</p>
+                    <p class="price">KES 1900</p>
+                    <a href="order.html?product=Crochet%20Shrug%207&price=1900&description=Crochet%20Shrug%207" >
+            <button>Order Now</button></a>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
