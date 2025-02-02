@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Crochet Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FAF3E0;
+            color: #5A4631;
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            background-color: #4CAF50; /* Green color */
+            padding: 20px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        form {
+            background-color: #EDE0D4;
+            padding: 20px;
+            width: 300px;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #A67B5B;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Place Your Order</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Product: <span id="product-name"></span></h2>
+        <p>Price: <span id="product-price"></span></p>
+        <p>Description: <span id="product-description"></span></p>
+
+        <form id="order-form">
+            <label for="address">Delivery Address:</label>
+            <input type="text" id="address" required>
+
+            <button type="submit">Confirm Order</button>
+        </form>
+    </main>
+
+    <script>
+        // Function to get URL parameters
+        function getURLParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // Extract product details from the URL
+        const productName = getURLParameter('product');
+        const productPrice = getURLParameter('price');
+        const productDescription = getURLParameter('description');
+
+        // Display the product details
+        document.getElementById('product-name').textContent = productName;
+        document.getElementById('product-price').textContent = 'KES ' + productPrice;
+        document.getElementById('product-description').textContent = productDescription;
+
+        // Handle form submission (WhatsApp message)
+        document.getElementById('order-form').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent form submission
+
+            const address = document.getElementById('address').value;  // Fixed typo: address
+            const message = `Order Details:\nProduct: ${productName}\nPrice: KES ${productPrice}\nDescription: ${productDescription}\nDelivery Address: ${address}`;
+
+            // WhatsApp API URL
+            const whatsappAPI = `https://wa.me/254743126894?text=${encodeURIComponent(message)}`;
+
+            // Redirect to WhatsApp
+            window.location.href = whatsappAPI;
+        });
+    </script>
+</body>
+</html>
